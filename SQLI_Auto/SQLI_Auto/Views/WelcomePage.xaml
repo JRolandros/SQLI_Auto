@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLI_Auto.Views.WelcomePage">
+  <StackLayout>
+    <!-- Title-->
+    <Label Text="SQLI Auto Management" FontSize="24" TextColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+    
+    <!--tile for menu-->
+    <Grid Padding="20" VerticalOptions="CenterAndExpand">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="150"></RowDefinition>
+      <RowDefinition Height="150"></RowDefinition>
+      <RowDefinition Height="*"></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="150"></ColumnDefinition>
+      <ColumnDefinition Width="150"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    
+    <ContentView x:Name="menu1" Grid.Row="1"></ContentView>
+    <ContentView x:Name="menu2" Grid.Row="1" Grid.Column="1"></ContentView>
+    <ContentView x:Name="menu3" Grid.Row="2" Grid.Column="0"></ContentView>
+    <ContentView x:Name="menu4" Grid.Row="2" Grid.Column="1"></ContentView>
+    </Grid>
+  </StackLayout>
+</ContentPage>
