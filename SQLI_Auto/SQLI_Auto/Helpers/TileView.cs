@@ -50,7 +50,6 @@ namespace SQLI_Auto.Helpers
             this.BackgroundColor = Color.Transparent;
         }
 
-        // Retain current Row and Col position.
 
         public async Task AnimateWinAsync(bool isReverse)
         {
