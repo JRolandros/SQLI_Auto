@@ -11,8 +11,14 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\TileView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\RootMapViewModels.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\WelcomeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\RootMap.xaml.cs">
       <DependentUpon>RootMap.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ShowMyTripDetails.xaml.cs">
+      <DependentUpon>ShowMyTripDetails.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\WelcomePage.xaml.cs">
@@ -31,6 +37,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\RootMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ShowMyTripDetails.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
